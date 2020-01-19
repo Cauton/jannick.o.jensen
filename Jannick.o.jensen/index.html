@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jannick O. Jensen - Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet/default.css">
+    <!-- Include external plugin(s) -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/716096ecb8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Jannick O. Jensen</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+      <ul id="main-menu" class="menu">
+        <!-- KOMMENTAR TIL JANNICK
+          These are the menu buttons. You can copy these lines to make new sections easily. Every line stands for 1 menu button.
+          href="" This basically means where the button points to. #about makes it jump to the 'element' with id="about"
+          You can also make it jump to external links. href="google.com" target="_blank" will make the menu item open google in a new tab, for instance.
+        -->
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#landscapes">Landscapes</a></li>
+        <li><a href="#portraits">Portraits</a></li>
+        <li><a href="#urban">Urban</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <section id="home" class="main-section">
+      <img src="images/logo.jpg" alt="Jannick O. Jensen" />
+      <h1>Jannick O. Jensen</h1>
+      <h2>Photography, Instagram Influencer</h2>
+    </section>
+
+    <section id="about" class="main-section">
+      <div class="left">
+        <img src="images/about.jpg" alt="About Jannick O. Jensen" />
+      </div>
+
+      <div class="right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis arcu ut quam porta auctor quis vel arcu. Donec a tellus euismod, pulvinar massa vehicula, commodo tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean eget facilisis lacus. In mi lorem, faucibus ac efficitur lacinia, interdum vel urna. Pellentesque quis convallis urna, non consectetur quam. Quisque in felis sed tellus tempus tempor. Suspendisse imperdiet at lorem ut porta. Aenean elit purus, bibendum ac tortor sed, ultricies malesuada orci. Vestibulum et ipsum at felis laoreet aliquet eu sit amet tellus. Phasellus iaculis aliquet nibh eu gravida.</p>
+
+        <p class="newParagraph">Pellentesque eu lobortis arcu. Etiam sagittis magna non egestas aliquet. Nam erat felis, ullamcorper non volutpat sit amet, vehicula eu ex. Donec vitae ante eu turpis viverra tempor. Ut convallis augue quis tellus dignissim tempor. Nam lacinia, diam in venenatis varius, nisi risus consequat nibh, id suscipit nisl nunc sit amet ex. Mauris scelerisque elementum cursus. Integer eu felis ex. Vestibulum posuere, nibh eu hendrerit condimentum, eros libero accumsan leo, non condimentum dui augue ac urna.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="main-section">
+      <div id="gallerycontainer">
+
+        <!-- KOMMENTAR TIL JANNICK
+          This is the gallery where you can add, remove or modify the order of images.
+          The height-width and amount of images per row is completely done by the "styling" which you shouldn't touch.
+
+          For "Retina images" which basically means high-quality even on mac, it's wise to have images at least 600x600 or bigger.
+          Though this does result in slower loading times, so I'm leaving that call up to what you want. 500 lower-quality images or 50 high-quality images have the same-ish loading time.
+
+          It quite clearly displays "blocks" below with a <h2> (header2) element that starts the title. If you want to add categories, copy a whole block and set the id="" to something similar. One-word only!
+          Adding/removing images can be done by just copying/deleting a line if the <img> (image) element and referring it to a new image as shown by the existing ones.
+          <div> element is essentially just a "box" with all the pictures of that type inside. For a "clean house" you don't want any pictures around that aren't carefully stored in a box.
+        -->
+        <h2 id="landscapes">Landscapes</h2>
+        <div class="galleryBox">
+          <img src="gallery/landscapes/1.jpg" />
+          <img src="gallery/landscapes/2.jpg" />
+          <img src="gallery/landscapes/3.jpg" />
+          <img src="gallery/landscapes/4.jpg" />
+          <img src="gallery/landscapes/5.jpg" />
+          <img src="gallery/landscapes/6.jpg" />
+          <img src="gallery/landscapes/7.jpg" />
+          <img src="gallery/landscapes/8.jpg" />
+          <img src="gallery/landscapes/9.jpg" />
+        </div>
+
+        <h2 id="portraits">Portraits</h2>
+        <div class="galleryBox">
+          <img src="gallery/portraits/1.jpg" />
+          <img src="gallery/portraits/2.jpg" />
+          <img src="gallery/portraits/3.jpg" />
+          <img src="gallery/portraits/4.jpg" />
+          <img src="gallery/portraits/5.jpg" />
+          <img src="gallery/portraits/6.jpg" />
+        </div>
+
+        <h2 id="urban">Urban</h2>
+        <div class="galleryBox">
+          <img src="gallery/urban/1.jpg" />
+          <img src="gallery/urban/2.jpg" />
+          <img src="gallery/urban/3.jpg" />
+          <img src="gallery/urban/4.jpg" />
+          <img src="gallery/urban/5.jpg" />
+          <img src="gallery/urban/6.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="main-section">
+      <a href="https://www.facebook.com/jannickojensen-337320690533298/" target="_blank"><i class="fab fa-facebook"></i> jannickojensen</a>
+      <a href="https://www.instagram.com/jannickojensen/" target="_blank"><i class="fab fa-instagram"></i> jannickojensen</a>
+      <span class="contact-text"><i class="fas fa-envelope"></i> jannick.jensen@gmail.com</span>
+    </section>
+
+    <footer id="footer">
+      &copy; Jannick O. Jensen - 2020
+    </footer>
+  </body>
+</html>
